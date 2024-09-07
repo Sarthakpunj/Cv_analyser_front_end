@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV X-ray</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">CV X-ray</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="login-btn">Log In</button>
+                    <button class="signin-btn">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="main-content">
+            <h1>Save Time by Filtering CVs Efficiently</h1>
+            <p>Focus on the Right Candidates with Automated CV Insights, and Summarizing CV's using Sections</p>
+            <button class="upload-btn" onclick="openUploadModal()">Upload CV</button>
+        </div>
+    </section>
+
+    <section id="upload-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeUploadModal()">&times;</span>
+            <h2>Drag and drop CV</h2>
+            <p>Drag up to 10 resumes continuously</p>
+            <div class="upload-area">
+                <input type="file" id="file-input" multiple accept=".pdf">
+                <label for="file-input">Browse file</label>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="/Users/sarthakpunj/Desktop/cv/98601140-656e-48e6-b2e2-1b67ef7799fa.jpg" alt="Sarthak Punj">
+                <h3>Sarthak Punj</h3>
+                <p>Back End Developer</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sarthak-punj-8b904b25b/">LinkedIn</a>
+                    <a href="https://github.com/Sarthakpunj">GitHub</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/Users/sarthakpunj/Desktop/cv/1000045444.jpg" alt="Pratyush Manna">
+                <h3>Pratyush Manna</h3>
+                <p>Front End Developer</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/pratyush-manna-66a540265/">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/Users/sarthakpunj/Desktop/cv/rakshan.jpeg" alt="Rakshan Vaishnav">
+                <h3>Rakshan Vaishnav</h3>
+                <p>Designer</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/rakshan-vaishnav-s-420665280/?originalSubdomain=in">LinkedIn</a>
+                    <a href="https://dribbble.com/Rakshan535">Dribbble</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
